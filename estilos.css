@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    min-width: 640px;
+    font-family: "Montserrat";
+    background-color: #ddd;
+}
+
+.conteiner {
+    width: 80vw;
+    margin: 0 auto;
+    min-height: 100vw;
+    position: relative;
+}
+
+#nome {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#perfil {
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;  
+}
+
+#midiasociais {
+    margin-bottom: 2rem;
+}
+
+.ladoesquerdo {
+    width: 18vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    padding: 1rem;
+    top: 0;   
+}
+
+p > a {
+    text-decoration: none;      
+    color: gray;
+    margin-bottom: 1rem;
+    
+}
+
+#imagens > img {
+    width: 20px;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 0.8rem;
+   
+}
+
+.midiasociais {
+    width: 20px; 
+    display: inline-block;
+    margin-right: .01vw !important;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.ladodireito {
+    width: 62vw;
+    position: relative;
+    margin-left: 18vw;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-areas: 
+        "cabecalho"
+        "sobre"
+        "projetostotais"
+        "precos"
+        "divcontato"
+        "rodape";
+}
+
+div.cabecalho {
+    grid-area: cabecalho;
+}
+
+div.sobre {
+    grid-area: sobre;
+}
+
+div.projetostotais {
+    grid-area: projetostotais;
+}
+
+div.precos {
+    grid-area: precos;
+}
+
+div.divcontato {
+    grid-area: divcontato;
+}
+
+div.rodape {
+    grid-area: rodape;
+}
+
+h1 > strong {
+    font-size: 3rem;
+}
+
+hr {
+    height: 10px;
+    background-color: lightgray;
+    border: 0;
+    margin: 20px 0;
+}
+
+.sobremim {
+    padding: 10px 0px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 3.1fr 5fr;
+    grid-auto-rows: 25vw;
+    background-color: white;
+    overflow: hidden;     
+}
+
+.subhero {
+    padding: 30px;
+}
+
+.button {
+    background-color: #333;
+    color: lightgray;
+    padding: 15px 30px;
+    display: inline-block;
+    font-size: 1.3vw;   
+    margin-top: 30px; 
+}
+
+.button:hover {
+    background-color: white;
+    color: gray;
+    outline: 1px solid gray;
+    outline-offset: -1;
+}
+
+.hero img {
+    height: 100%; 
+    width: 100%;    
+}
+
+#habilidades {
+    margin-top: 2.5vw;
+}
+
+h4 {
+    font-weight: normal;
+    margin-bottom: 0;  
+    margin-top: 2.5vw; 
+}
+
+.pai {
+    width: 62vw;
+    height: 3.5vw;
+    background-color: lightgray;
+}
+
+.filho1 {
+    width: 62vw;
+    height: 3.5vw;
+    background-color: #333;
+    width: 50%;
+}
+
+.filho1 > p {
+    color: lightgray;
+    text-align: center;
+    padding: 1vw;   
+}
+
+.filho2 {
+    width: 62vw;
+    height: 3.5vw;
+    background-color: #333;
+    width: 30%;
+}
+
+.filho2 > p {
+    color: lightgray;
+    text-align: center;
+    padding: 1vw;
+}
+
+.filho3 {
+    width: 62vw;
+    height: 3.5vw;
+    background-color: #333;
+    width: 50%;
+    margin-bottom: 3.5vw;
+}
+
+.filho3 > p {
+    color: lightgray;
+    text-align: center;
+    padding: 1vw;
+}
+
+#formacao {
+    margin-top: 2.5vw;
+}
+
+.filho4 {
+    width: 62vw;
+    height: 3.5vw;
+    background-color: #333;
+    width: 100%;
+    margin-bottom: 3.5vw;
+}
+
+.filho4 > p {
+    color: lightgray;
+    text-align: center;
+    padding: 1vw;
+}
+
+.filho5 {
+    width: 62vw;
+    height: 3.5vw;
+    background-color: #333;
+    width: 45%;
+    margin-bottom: 3.5vw;
+}
+
+.filho5 > p {
+    color: lightgray;
+    text-align: center;
+    padding: 1vw;
+}
+
+#idiomas {
+    margin-top: 2.5vw;
+}
+
+.tituloprojetos {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+
+.projetos .projetostotais {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 1.5rem;    
+}
+
+.card {
+    width: calc(33.33% - 1rem);
+    background-color: white;
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    border-bottom: solid 1px lightgray;
+}
+
+.tituloprecos {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+
+.precos table {
+    text-align: center;
+    width: 100%;  
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+.precos table td {
+    width: 33.33%;
+    padding: 15px;
+    border: 2px solid lightgray;
+}
+
+#destaquetopo {
+    background-color: rgb(137, 155, 137);
+    padding: 15px;
+    font-size: 24px;
+}
+
+#destaque {
+    background-color: rgb(188, 205, 188);
+}
+
+#topo {
+    background-color: lightgray;
+    font-size: 20px;
+    padding: 15px;    
+}
+
+.buttontable > button {
+    background-color: #333;
+    color: lightgray;
+    padding: 15px;  
+    font-size: 16px;
+}
+
+.titulocontatos {
+    margin: 1rem 0;
+}
+
+.divcontato {
+    background-color: gray;
+    color: white;
+    padding: 1.5rem;      
+}
+
+.divcontato table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.divcontato table td {
+    width: 33.33%;
+    padding: 1.5rem;
+    border: 1px solid lightgray;   
+}
+
+.divcontato table img {
+    height: 64px;
+}
+
+.divcontato label {
+    font-size: 1.3vw;
+}
+
+.divcontato input,
+.divcontato select {
+    padding: 15px;
+    font-size: 1.3vw;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.divcontato textarea {
+    padding: 15px;
+    font-size: 1.3vw;
+    width: 100%;
+}
+
+.divcontato a {
+    text-decoration: none;  
+    color: white;
+}
+
+.contatodestaque {
+    background-color: rgb(137, 155, 137);
+}
+
+.rodape {
+    background-color: #333;
+    color: lightgray;
+    text-align: center;
+    font-size: 1.3vw;
+    padding: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+    .conteiner {
+        flex-basis: auto;
+        
+    }
+    .ladoesquerdo {
+        width: 80%;
+        height: auto;  
+        position: static;
+    }
+
+    .ladoesquerdo .principal {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: 1rem;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .ladoesquerdo .menu {
+        display: flex;
+        align-items: 3vw;
+        margin-top: 0;
+    }
+
+    .ladoesquerdo .menu img {
+        width: 1.7vw;
+        margin-right: 0.6vw;
+    }
+
+    .ladoesquerdo .menu a {
+        font-size: 2vw;
+       
+    }
+
+    .ladoesquerdo .menu p {
+        margin-right: 2vw;
+    }
+
+    .ladoesquerdo h2 {
+        vertical-align: top;
+        margin-top: 1vw;
+        font-size: 3.5vw;
+    }
+
+    .ladoesquerdo .perfil {
+        width: 12vw;
+        height: 0%;
+        border-radius: 10px;
+    }
+    .cabecalho {
+        display: none;
+    }
+
+    #nome {
+        visibility: visible;
+    }
+
+    .ladodireito {
+        width: 80%;
+        padding: 0;
+        position: static;
+        padding-top: 0.5rem;
+        margin: 0;
+    }
+
+    .sobreprincipal {
+        font-size: 1.2vw;
+    }
+
+    .sobremim .hero{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sobremim .hero img {
+        width: 100%;   
+    }
+
+    .sobremim .hero h2 {
+        font-size: 2.5vw;
+    }
+
+    .sobreprincipal .hero .button {
+        font-size: 1.5vw;
+    }
+
+    .card {
+        width: calc(50% - 0.75rem);
+    }
+
+    .divcontato input,
+    .divcontato select,
+    .divcontato textarea,
+    .divcontato label,
+    .button {
+        font-size: 2vw;
+    }
+
+    .rodape {
+        font-size: 2vw;
+    }
+
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
